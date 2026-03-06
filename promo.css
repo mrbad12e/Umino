@@ -1,0 +1,38 @@
+.promo-strip {
+    height: 90px;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.promo-track {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    animation: scroll-promo 20s linear infinite;
+    white-space: nowrap;
+}
+
+.promo-item {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    white-space: nowrap;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #111111;
+}
+
+.promo-item img {
+    width: 20px;
+    height: 20px;
+    opacity: 0.9;
+    flex-shrink: 0;
+}
+
+@keyframes scroll-promo {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+}
