@@ -17,9 +17,12 @@ nav {
 
 .logo {
     width: 92px;
-    height: 20px;
-    top: 25px;
-    left: 30px;
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
 }
 
 .nav-menu {
@@ -36,6 +39,9 @@ nav {
     color: var(--text-dark);
     position: relative;
     text-transform: capitalize;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
 }
 
 .nav-menu li a:hover {
@@ -57,9 +63,13 @@ nav {
     width: 100%;
 }
 
+.chevron {
+    flex-shrink: 0;
+}
+
 .header-icons {
     display: flex;
-    gap: 20px;
+    gap: 16px;
     align-items: center;
     flex-shrink: 0;
 }
@@ -67,9 +77,34 @@ nav {
 .icon-btn {
     background: none;
     border: none;
-    font-size: 13px;
     cursor: pointer;
-    color: var(--text-dark);
-    transition: color var(--transition-speed) ease;
+    color: #333;
+    transition: color 0.3s ease;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+}
+
+.icon-btn:hover {
+    color: #000;
+}
+
+.badge {
+    position: absolute;
+    top: -5px;
+    right: -7px;
+    min-width: 16px;
+    height: 16px;
+    background: #f97316;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 600;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2px;
+    line-height: 1;
 }
