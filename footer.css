@@ -1,0 +1,144 @@
+/* Footer */
+footer {
+    width: 100%;
+    min-height: 478px;
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.footer-content {
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 60px 80px;
+    gap: 40px;
+    box-sizing: border-box;
+}
+
+/* About column */
+.footer-column:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+    width: 340px;
+    flex: none;
+    flex-grow: 0;
+}
+
+/* Logo */
+.footer-logo {
+    margin: 0;
+}
+
+.footer-logo img {
+    width: 92.41px;
+    height: 20px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+/* Address text */
+address {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 25px;
+    width: 340px;
+
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #555555;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+/* Social icons */
+.social-links {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    width: 220px;
+    height: 36px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    box-sizing: border-box;
+    border: 1px solid #555555;
+    color: #555555;
+    text-decoration: none;
+    font-family: 'Jost';
+    font-size: 12px;
+    flex: none;
+    flex-grow: 0;
+}
+
+/* Follow on Shop badge */
+.shop-badge {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    width: 156px;
+    height: 36px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.shop-badge span {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #555555;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.shop-badge > :first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: #5A31F4;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.shop-badge img {
+    width: 40px;
+    height: 16px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
