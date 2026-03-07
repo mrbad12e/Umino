@@ -95,6 +95,7 @@ address {
     font-size: 12px;
     flex: none;
     flex-grow: 0;
+    border-radius: 100px;
 }
 
 /* Follow on Shop badge */
@@ -123,16 +124,18 @@ address {
     flex-grow: 0;
 }
 
-.shop-badge > :first-child {
+.shop-badge-icon {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 36px;
     height: 36px;
     background: #5A31F4;
+    color: #FFFFFF;
     flex: none;
     order: 0;
     flex-grow: 0;
+    border-radius: 100px;
 }
 
 .shop-badge img {
