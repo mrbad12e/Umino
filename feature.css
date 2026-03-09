@@ -22,7 +22,7 @@
     font-weight: 400;
     font-size: 45px;
     text-align: center;
-    color: #111111;
+    color: var(--color-black);
     margin: 0;
 }
 
@@ -32,7 +32,7 @@
     font-weight: 400;
     font-size: 16px;
     text-align: center;
-    color: #555555;
+    color: var(--color-body-text);
     margin: 0;
 }
 
@@ -60,12 +60,12 @@
     position: relative;
     border-radius: 10px;
     overflow: hidden;
-    background: #F5F5F5;
+    background: var(--color-light-gray);
 }
 
 .collection-card:nth-child(2),
 .collection-card:nth-child(3) {
-    background: #EEEFF1;
+    background: var(--color-light-gray-3);
 }
 
 .collection-card img {
@@ -86,12 +86,12 @@
     transform: translateX(-50%);
     width: 160px;
     height: 50px;
-    background: #FFFFFF;
+    background: var(--color-white);
     border-radius: 30px;
     font-family: 'Jost', sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color: #111111;
+    color: var(--color-black);
     border: none;
     cursor: pointer;
     white-space: nowrap;

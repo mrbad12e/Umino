@@ -16,8 +16,10 @@
     align-items: flex-start;
     padding: 0px;
     gap: 30px;
-    width: 1410px;
+    width: 100%;
+    max-width: 1410px;
     height: 558px;
+    overflow-x: auto;
 }
 
 /* Product card */
@@ -72,7 +74,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
-    color: #FFFFFF;
+    color: var(--color-white);
     z-index: 1;
 }
 
@@ -81,9 +83,9 @@
     position: static;
 }
 
-.soldout-badge  { background: #757575; }
-.pre-order-badge   { background: #177983; }
-.sale-badge   { background: #d73f0f; }
+.soldout-badge  { background: var(--color-gray-dark); }
+.pre-order-badge   { background: var(--color-teal); }
+.sale-badge   { background: var(--color-orange); }
 
 /* Product info (text section) */
 .product-info {
@@ -104,7 +106,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 23px;
-    color: #111111;
+    color: var(--color-black);
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -127,19 +129,19 @@
     display: inline-flex;
     gap: 1px;
     font-size: 10px;
-    color: #C8C8C8;
+    color: var(--color-gray-medium);
     line-height: 1;
 }
 
 .stars .full {
-    color: #111111;
+    color: var(--color-black);
 }
 
 /* Half star */
 .stars .half {
     position: relative;
     display: inline-block;
-    color: #C8C8C8;
+    color: var(--color-gray-medium);
 }
 
 .stars .half::after {
@@ -149,7 +151,7 @@
     top: 0;
     width: 50%;
     overflow: hidden;
-    color: #111111;
+    color: var(--color-black);
 }
 
 /* Price */
@@ -169,16 +171,16 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
-    color: #111111;
+    color: var(--color-black);
 }
 
 .original-price {
     text-decoration: line-through;
-    color: #C8C8C8;
+    color: var(--color-gray-medium);
 }
 
 .sale-price {
-    color: #D73F0F;
+    color: var(--color-orange);
 }
 
 /* Color swatches */
@@ -202,14 +204,14 @@
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background: #FFFFFF;
-    border: 1px solid #DDDDDD;
+    background: var(--color-white);
+    border: 1px solid var(--color-light-gray-4);
     flex: none;
     flex-grow: 0;
 }
 
 .color-option.selected {
-    border: 1px solid #111111;
+    border: 1px solid var(--color-black);
 }
 
 .color-option span {

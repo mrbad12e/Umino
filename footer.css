@@ -5,7 +5,7 @@ footer {
     flex: none;
     order: 4;
     flex-grow: 0;
-    background-color: #fff;
+    background-color: var(--color-white);
     box-sizing: border-box;
 }
 
@@ -60,7 +60,7 @@ address {
     font-weight: 400;
     font-size: 16px;
     line-height: 23px;
-    color: #555555;
+    color: var(--color-body-text);
 
     flex: none;
     order: 1;
@@ -88,8 +88,8 @@ address {
     width: 36px;
     height: 36px;
     box-sizing: border-box;
-    border: 1px solid #555555;
-    color: #555555;
+    border: 1px solid var(--color-body-text);
+    color: var(--color-body-text);
     text-decoration: none;
     font-family: 'Jost';
     font-size: 12px;
@@ -118,7 +118,7 @@ address {
     font-weight: 400;
     font-size: 16px;
     line-height: 23px;
-    color: #555555;
+    color: var(--color-body-text);
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -130,8 +130,8 @@ address {
     justify-content: center;
     width: 36px;
     height: 36px;
-    background: #5A31F4;
-    color: #FFFFFF;
+    background: var(--color-purple);
+    color: var(--color-white);
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -165,7 +165,7 @@ address {
     font-size: 14px;
     line-height: 20px;
     text-transform: uppercase;
-    color: #111111;
+    color: var(--color-black);
     margin: 0;
 }
 
@@ -186,14 +186,14 @@ address {
     font-weight: 400;
     font-size: 16px;
     line-height: 100%;
-    color: #555555;
+    color: var(--color-body-text);
     text-decoration: none;
 }
 
 .footer-links li a:hover {
-    color: #111111;
+    color: var(--color-black);
     padding-left: 10px;
-    font: 2px solid #111111;
+    font: 2px solid var(--color-black);
 }
 
 /* Newsletter column */
@@ -207,7 +207,7 @@ address {
     font-weight: 400;
     font-size: 16px;
     line-height: 100%;
-    color: #555555;
+    color: var(--color-body-text);
     margin: 0;
 }
 
@@ -217,7 +217,7 @@ address {
     align-items: center;
     gap: 0;
     width: 100%;
-    border: 1px solid #E0E0E0;
+    border: 1px solid var(--color-light-gray-2);
     border-radius: 100px;
     overflow: hidden;
 }
@@ -229,18 +229,18 @@ address {
     outline: none;
     font-family: 'Jost';
     font-size: 14px;
-    color: #555555;
+    color: var(--color-body-text);
     background: transparent;
 }
 
 .newsletter-form input[type="email"]::placeholder {
-    color: #AAAAAA;
+    color: var(--color-gray-input);
 }
 
 .btn-newsletter {
     padding: 12px 24px;
-    background: #111111;
-    color: #FFFFFF;
+    background: var(--color-black);
+    color: var(--color-white);
     font-family: 'Jost';
     font-weight: 600;
     font-size: 13px;
@@ -252,7 +252,7 @@ address {
 }
 
 .btn-newsletter:hover {
-    background: #333333;
+    background: var(--color-gray-dark);
 }
 
 /* Footer Bottom */
@@ -263,7 +263,7 @@ address {
     align-items: center;
     padding: 18px 80px;
     gap: 20px;
-    border-top: 1px solid #EBEBEB;
+    border-top: 1px solid var(--color-gray-border);
     box-sizing: border-box;
 }
 
@@ -285,7 +285,7 @@ address {
     font-weight: 400;
     font-size: 16px;
     line-height: 23px;
-    color: #555555;
+    color: var(--color-body-text);
     cursor: pointer;
 }
 
@@ -295,7 +295,7 @@ address {
     font-weight: 400;
     font-size: 16px;
     line-height: 23px;
-    color: #555555;
+    color: var(--color-body-text);
     margin: 0;
 }
 
@@ -306,7 +306,7 @@ address {
 .footer-background{
     height: 478px;
     width: 100%;
-    background: #fff;
-    border-top: 1px solid #EBEBEB;
+    background: var(--color-white);
+    border-top: 1px solid var(--color-gray-border);
     box-sizing: border-box;
 }

@@ -4,16 +4,18 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding: 20px 0;
+    padding: 20px 40px;
+    max-width: 1920px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .banner {
     position: relative;
-    width: 695px;
+    flex: 1 1 0;
     height: 560px;
     border-radius: 10px;
     overflow: hidden;
-    flex-shrink: 0;
 }
 
 .banner::after {
@@ -29,8 +31,8 @@
 }
 
 .banner img {
-    width: fit-content;
-    height: fit-content;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     transition: transform 0.5s ease;
 }
@@ -62,7 +64,7 @@
     font-weight: 700;
     line-height: 15px;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--color-white);
 }
 
 .banner-title {
@@ -71,7 +73,7 @@
     font-weight: 600;
     line-height: 49px;
     letter-spacing: -0.02em;
-    color: #FFFFFF;
+    color: var(--color-white);
 }
 
 .banner .btn {
@@ -82,8 +84,8 @@
     font-family: 'Instrument Sans', sans-serif;
     font-size: 15px;
     font-weight: 600;
-    color: #111111;
-    background: #FFFFFF;
+    color: var(--color-black);
+    background: var(--color-white);
     border: none;
     cursor: pointer;
 }
