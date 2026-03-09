@@ -145,3 +145,112 @@ address {
     order: 1;
     flex-grow: 0;
 }
+
+/* Other footer columns */
+.footer-column:not(:first-child) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 25px;
+    flex: none;
+    flex-grow: 0;
+}
+
+/* Column headings */
+.footer-heading {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #111111;
+    margin: 0;
+}
+
+/* Links list */
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+}
+
+.footer-links li a {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #555555;
+    text-decoration: none;
+}
+
+.footer-links li a:hover {
+    color: #111111;
+    padding-left: 10px;
+    font: 2px solid #111111;
+}
+
+/* Newsletter column */
+.footer-column:last-child {
+    max-width: 360px;
+}
+
+.newsletter-text {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #555555;
+    margin: 0;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+    border: 1px solid #E0E0E0;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.newsletter-form input[type="email"] {
+    flex: 1;
+    padding: 12px 20px;
+    border: none;
+    outline: none;
+    font-family: 'Jost';
+    font-size: 14px;
+    color: #555555;
+    background: transparent;
+}
+
+.newsletter-form input[type="email"]::placeholder {
+    color: #AAAAAA;
+}
+
+.btn-newsletter {
+    padding: 12px 24px;
+    background: #111111;
+    color: #FFFFFF;
+    font-family: 'Jost';
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.btn-newsletter:hover {
+    background: #333333;
+}
