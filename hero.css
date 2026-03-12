@@ -4,10 +4,11 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding: 20px 40px;
-    max-width: 1920px;
+    padding: var(--spacing-2xl) var(--spacing-lg);
+    max-width: var(--container-max-width);
     margin: 0 auto;
     box-sizing: border-box;
+    width: 100%;
 }
 
 .banner {

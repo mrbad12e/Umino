@@ -12,58 +12,64 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 40px;
+    padding: 0 var(--spacing-md);
     height: 100%;
-    max-width: 1920px;
+    max-width: var(--container-max-width);
     margin: 0 auto;
     width: 100%;
     box-sizing: border-box;
 }
 
-/* LOGO */
+/* LOGO — Sized from Figma scraper output: 92px × 20px */
 .logo {
-    width: 92px;
+    width: 5.75rem;
+    height: 1.25rem;
     flex-shrink: 0;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .logo img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: contain;
     display: block;
 }
 
-/* NAVIGATION MENU */
+/* NAVIGATION MENU — properties.txt: gap 30px, height 23px, font 16px */
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 1.875rem;
     flex: 1;
     justify-content: center;
     margin: 0;
     padding: 0;
+    height: 1.4375rem;
 }
 
 .nav-menu li {
     display: flex;
     align-items: center;
-    height: 100%;
+    height: 1.4375rem;
+    white-space: nowrap;
 }
 
 .nav-menu li a {
     font-family: 'Jost', sans-serif;
-    font-size: 15px;
-    font-weight: 400;
+    font-size: 1rem;
+    font-weight: 500;
     color: var(--color-black);
     position: relative;
     text-transform: capitalize;
     display: inline-flex;
     align-items: center;
-    gap: 4px;
-    line-height: 20px;
+    gap: 0.3125rem;
+    line-height: 1.4375rem;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: color var(--transition-speed) ease;
+    padding: 0 0.25rem;
 }
 
 .nav-menu li a:hover {
@@ -79,12 +85,12 @@ nav {
 .nav-menu li a::after {
     content: '';
     position: absolute;
-    bottom: -6px;
+    bottom: -8px;
     left: 0;
     width: 0;
     height: 2px;
     background-color: var(--color-black);
-    transition: width 0.35s ease;
+    transition: width var(--transition-speed) ease;
 }
 
 .nav-menu li a:hover::after {
@@ -94,22 +100,23 @@ nav {
 /* CHEVRON ICON */
 .chevron {
     flex-shrink: 0;
-    width: 12px;
-    height: 8px;
+    width: 10px;
+    height: 6px;
     display: inline-block;
-    transition: transform 0.3s ease;
+    transition: transform var(--transition-speed) ease;
 }
 
 .nav-menu li a:hover .chevron {
     transform: translateY(2px);
 }
 
-/* HEADER ICONS */
+/* HEADER ICONS — properties.txt: icons 17px × 17px, gap 20px (37px - 17px icon width) */
 .header-icons {
     display: flex;
-    gap: 16px;
+    gap: 1.25rem;
     align-items: center;
     flex-shrink: 0;
+    height: 1.4375rem;
 }
 
 .icon-btn {
@@ -117,20 +124,16 @@ nav {
     border: none;
     cursor: pointer;
     color: var(--color-black);
-    transition: color 0.3s ease;
+    transition: color var(--transition-speed) ease;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 20px;
-    height: 20px;
+    width: 1.0625rem;
+    height: 1.0625rem;
     padding: 0;
-}
-
-/* Hide login and recently viewed icons */
-.icon-btn:nth-child(2),
-.icon-btn:nth-child(3) {
-    display: none;
+    line-height: 1;
+    flex-shrink: 0;
 }
 
 .icon-btn:hover {
@@ -142,26 +145,26 @@ nav {
     outline-offset: 2px;
 }
 
-/* BADGE STYLING */
+/* BADGE STYLING — properties.txt: 18px × 18px, font 10px */
 .badge {
     position: absolute;
-    top: -6px;
-    right: -8px;
-    min-width: 20px;
-    height: 20px;
+    top: -0.5rem;
+    right: -0.625rem;
+    min-width: 1.125rem;
+    height: 1.125rem;
     background: var(--color-orange-warm);
     color: var(--color-white);
     font-family: 'Jost', sans-serif;
-    font-size: 11px;
+    font-size: 0.625rem;
     font-weight: 600;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 2px;
+    padding: 0 0.125rem;
     line-height: 1;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.03rem;
 }
 
 .badge-wishlist {
@@ -171,47 +174,68 @@ nav {
 /* RESPONSIVE: TABLET */
 @media (max-width: 1024px) {
     nav {
-        padding: 0 30px;
+        padding: 0 var(--spacing-md);
+        gap: var(--spacing-md);
+    }
+
+    .logo {
+        width: 5.75rem;
+        height: 1.25rem;
     }
 
     .nav-menu {
-        gap: 30px;
+        gap: 1.875rem;
+        height: 1.4375rem;
+    }
+
+    .nav-menu li {
+        height: 1.4375rem;
     }
 
     .nav-menu li a {
-        font-size: 15px;
+        font-size: 1rem;
+        line-height: 1.4375rem;
     }
 
     .header-icons {
-        gap: 20px;
+        gap: 1.25rem;
+        height: 1.4375rem;
+    }
+
+    .icon-btn {
+        width: 1.0625rem;
+        height: 1.0625rem;
     }
 }
 
 /* RESPONSIVE: MOBILE */
 @media (max-width: 768px) {
     header {
-        height: 60px;
+        height: 4.375rem;
     }
 
     nav {
-        padding: 0 16px;
+        padding: 0 var(--spacing-sm);
+        gap: var(--spacing-sm);
     }
 
     .logo {
-        width: 80px;
+        width: 4.6875rem;
+        height: 1rem;
     }
 
     .nav-menu {
         display: none;
         position: absolute;
-        top: 60px;
+        top: 4.375rem;
         left: 0;
         right: 0;
         flex-direction: column;
         gap: 0;
+        height: auto;
         background-color: var(--color-white);
         border-bottom: 1px solid var(--color-gray-border);
-        padding: 16px 0;
+        padding: var(--spacing-sm) 0;
         z-index: 998;
     }
 
@@ -226,7 +250,8 @@ nav {
     }
 
     .nav-menu li a {
-        padding: 12px 20px;
+        padding: 0.75rem var(--spacing-md);
+        font-size: 0.875rem;
     }
 
     .nav-menu li a::after {
@@ -234,19 +259,20 @@ nav {
     }
 
     .header-icons {
-        gap: 12px;
+        gap: 0.875rem;
+        height: 1.0625rem;
     }
 
     .icon-btn {
-        width: 16px;
-        height: 16px;
+        width: 0.9375rem;
+        height: 0.9375rem;
     }
 
     .badge {
-        top: -8px;
-        right: -10px;
-        min-width: 16px;
-        height: 16px;
-        font-size: 9px;
+        top: -0.5rem;
+        right: -0.625rem;
+        min-width: 0.875rem;
+        height: 0.875rem;
+        font-size: 0.5rem;
     }
 }

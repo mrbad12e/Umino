@@ -58,9 +58,22 @@
     --spacing-md: 24px;
     --spacing-lg: 32px;
     --spacing-xl: 48px;
+    --spacing-2xl: 60px;
+    --spacing-3xl: 100px;
+
+    /* Section spacing */
+    --section-gap-vertical: 100px;
+    --section-gap-horizontal: 40px;
+    --grid-gap: 30px;
+    --content-max-width: 1410px;
+    --container-max-width: 1920px;
 
     /* Layout */
-    --border-radius: 4px;
+    --border-radius: 10px;
+    --border-radius-sm: 3px;
+    --border-radius-md: 10px;
+    --border-radius-lg: 30px;
+    --border-radius-full: 100px;
     --transition-speed: 0.3s;
 }
 
@@ -69,6 +82,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -80,6 +95,18 @@ body {
     background-color: var(--secondary-color);
     line-height: 1.6;
     font-size: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main sections spacing */
+section {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+section:not(:first-of-type) {
+    margin-top: var(--section-gap-vertical);
 }
 
 img {
@@ -102,12 +129,17 @@ a:hover {
 .btn {
     padding: 10px 24px;
     border: none;
-    border-radius: var(--border-radius);
-    font-size: 14px;
+    border-radius: var(--border-radius-lg);
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 15px;
     font-weight: 600;
     cursor: pointer;
     transition: all var(--transition-speed) ease;
     letter-spacing: 0.5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
 }
 
 .btn-primary {
@@ -119,4 +151,48 @@ a:hover {
 .btn-primary:hover {
     background-color: var(--primary-color);
     color: var(--secondary-color);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: 2px solid transparent;
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+/* RESPONSIVE DESIGN */
+
+/* TABLET */
+@media (max-width: 1024px) {
+    :root {
+        --section-gap-vertical: 80px;
+        --spacing-2xl: 48px;
+    }
+
+    section:not(:first-of-type) {
+        margin-top: 80px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    :root {
+        --section-gap-vertical: 60px;
+        --spacing-2xl: 40px;
+        --section-gap-horizontal: 32px;
+    }
+
+    section:not(:first-of-type) {
+        margin-top: 60px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
 }

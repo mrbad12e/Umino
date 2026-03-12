@@ -2,28 +2,32 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 60px 40px;
-    max-width: 1410px;
+    padding: var(--spacing-2xl) var(--spacing-lg);
+    max-width: var(--container-max-width);
     margin: 0 auto;
-    gap: 40px;
+    gap: var(--section-gap-horizontal);
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .section-header {
     display: flex;
-    width: max-content;
+    width: 100%;
+    max-width: 601px;
     flex-direction: column;
     align-items: center;
     gap: 25px;
 }
 
 .section-title {
-    font-family: 'Jost', sans-serif;
+    font-family: 'Instrument Sans', sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 45px;
     text-align: center;
     color: var(--color-black);
     margin: 0;
+    letter-spacing: -0.5px;
 }
 
 .section-subtitle {
@@ -34,14 +38,17 @@
     text-align: center;
     color: var(--color-body-text);
     margin: 0;
+    line-height: 1.6;
 }
 
 .collections-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 350px 350px;
-    gap: 30px;
+    gap: var(--grid-gap);
     width: 100%;
+    max-width: var(--content-max-width);
+    box-sizing: border-box;
 }
 
 /* Card 1 (Clothing) — full height, column 1 */
@@ -88,11 +95,76 @@
     height: 50px;
     background: var(--color-white);
     border-radius: 30px;
-    font-family: 'Jost', sans-serif;
-    font-weight: 500;
+    font-family: 'Instrument Sans', sans-serif;
+    font-weight: 600;
     font-size: 16px;
     color: var(--color-black);
     border: none;
     cursor: pointer;
     white-space: nowrap;
+}
+
+/* RESPONSIVE: TABLET */
+@media (max-width: 1024px) {
+    .featured-collections {
+        padding: var(--spacing-xl) var(--spacing-md);
+    }
+
+    .collections-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 250px 250px;
+        gap: var(--spacing-lg);
+    }
+
+    .collection-card:nth-child(1) {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+    }
+
+    .collection-card:nth-child(4) {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+    }
+
+    .section-title {
+        font-size: 36px;
+        line-height: 52px;
+    }
+}
+
+/* RESPONSIVE: MOBILE */
+@media (max-width: 768px) {
+    .featured-collections {
+        padding: var(--spacing-xl) var(--spacing-sm);
+        gap: var(--spacing-lg);
+    }
+
+    .section-header {
+        max-width: 100%;
+    }
+
+    .section-title {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .section-subtitle {
+        font-size: 14px;
+    }
+
+    .collections-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: var(--spacing-md);
+    }
+
+    .collection-card:nth-child(1),
+    .collection-card:nth-child(4) {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    .collection-card {
+        height: 250px;
+    }
 }
