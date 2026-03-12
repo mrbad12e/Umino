@@ -1,6 +1,6 @@
 .promo-strip {
     height: 90px;
-    background-color: var(--color-light-gray-2);
+    background-color: var(--color-2);
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -10,7 +10,7 @@
     display: flex;
     gap: 50px;
     align-items: center;
-    animation: scroll-promo 20s linear infinite;
+    /* animation: scroll-promo 20s linear infinite; */
     white-space: nowrap;
     padding: 0 var(--spacing-lg);
 }
