@@ -1,0 +1,13 @@
+/* Reset & Base */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; scroll-behavior: smooth; }
+body {
+  font-family: var(--family-jost);
+  color: var(--color-1);
+  background: var(--color-2);
+  overflow-x: hidden;
+}
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+
+button { cursor: pointer; border: none; background: none; font-family: inherit; }
