@@ -9,6 +9,7 @@
 @import url('./promo.css');
 @import url('./feature.css');
 @import url('./section-common.css');
+@import url('./arrivals.css');
 
 img {
     max-width: 100%;
