@@ -10,37 +10,6 @@
     box-sizing: border-box;
 }
 
-.section-header {
-    display: flex;
-    width: 100%;
-    max-width: 601px;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-}
-
-.section-title {
-    font-family: 'Instrument Sans', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 45px;
-    text-align: center;
-    color: var(--color-black);
-    margin: 0;
-    letter-spacing: -0.5px;
-}
-
-.section-subtitle {
-    font-family: 'Jost', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    text-align: center;
-    color: var(--color-body-text);
-    margin: 0;
-    line-height: 1.6;
-}
-
 .collections-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

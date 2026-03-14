@@ -1,0 +1,23 @@
+.section-header {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 48px;
+    gap: 20px;
+}
+
+.section-title {
+    font-family: var(--family-jost);
+    font-size: var(--size-45);
+    font-weight: var(--weight-400);
+    color: var(--color-1);
+    line-height: 1;
+}
+
+.section-subtitle {
+    font-family: var(--family-jost);
+    font-size: var(--size-16);
+    font-weight: var(--weight-400);
+    color: var(--color-3);
+}
